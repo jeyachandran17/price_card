@@ -1,8 +1,18 @@
-
-body{
-  background-image: linear-gradient(to right, #0062E6, #33AEFF);
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+.App {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right, #0062E6, #33AEFF);
+}
 .card{
   background-color: whitesmoke;
   height: 520px;
@@ -65,20 +75,4 @@ hr{
 }
 .font_opa , .font_opa1{
   opacity:0.5;
-}
-
-/* .price_card{
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content:space-between;
-
-} */
-.App{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap:wrap;
-  margin-top: 100px;
 }
