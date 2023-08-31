@@ -15,8 +15,10 @@ export default function App(){
 function Price_cart({price_method,price_value,user,storage,sub,classname,opa,opa1,check,uncheck,uncheck1,check1,check2}){
   return(
     <div className='card'>
-      <h4 className='price_method'>{price_method}</h4>
-      <h1 className='price'>${price_value}<span className='font'>/month</span></h1>
+      <div className="card_title">
+        <h4 className='price_method'>{price_method}</h4>
+        <h1 className='price'>${price_value}<span className='font'>/month</span></h1>
+      </div>
       <hr/>
       <ul className={classname}><span className="check">{check} </span>{user}</ul>
       <ul><span id='check'>{check} </span>{storage}GB Storager</ul>
