@@ -20,15 +20,43 @@ function Price_cart({price_method,price_value,user,storage,sub,classname,opa,opa
         <h1 className='price'>${price_value}<span className='font'>/month</span></h1>
       </div>
       <hr/>
-      <ul className={classname}><span className="check">{check} </span>{user}</ul>
-      <ul><span id='check'>{check} </span>{storage}GB Storager</ul>
-      <ul><span id='check'>{check} </span>Unlimited Public Projects</ul>
-      <ul><span id='check'>{check} </span>Community Access</ul>
-      <ul className={opa}><span id="check">{uncheck}{check1} </span>Unlimited Private Projects</ul>
-      <ul className={opa}><span id="check">{uncheck}{check1} </span>Dedicated Phone Support</ul>
-      <ul className={opa}><span id="check" className={classname}>{uncheck}{check1} {sub} </span>Free Subdomain</ul>
-      <ul className={opa1}><span id="check">{uncheck}{uncheck1}{check2} </span>Monthly Status Reports</ul>
-      <button className='button_type'>Button</button>
+      <div className="card-contant">
+        <ul className={classname}>
+          <span className="check">{check}</span>
+          <span>{user}</span>
+        </ul>
+        <ul>
+          <span id='check'>{check}</span>
+          <span>{storage}GB Storager</span>
+        </ul>
+        <ul>
+          <span id='check'>{check}</span>
+          <span>Unlimited Public Projects</span>
+        </ul>
+        <ul>
+          <span id='check'>{check}</span>
+          <span>Community Access</span>
+        </ul>
+        <ul className={opa}>
+          <span id="check">{uncheck}{check1}</span>
+          <span>Unlimited Private Projects</span>
+        </ul>
+        <ul className={opa}>
+          <span id="check">{uncheck}{check1}</span>
+          <span>Dedicated Phone Support</span>
+        </ul>
+        <ul className={opa}>
+          <span id="check" className={classname}>{uncheck}{check1} {sub} </span>
+          <span>Free Subdomain</span>
+        </ul>
+        <ul className={opa1}>
+          <span id="check">{uncheck}{uncheck1}{check2}</span>
+          <span>Monthly Status Reports</span>  
+        </ul>
+      </div>
+      <div className="button-container">
+        <button className='button_type'>Button</button>
+      </div>
     </div>
     );
 }
